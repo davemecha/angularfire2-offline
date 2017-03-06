@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AngularFire2 Offline Demo</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="styles.0a4020e2b95071981c1c.bundle.css" rel="stylesheet"/></head>
+<body>
+  <app-root>Loading...</app-root>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        console.log('Service Worker registered');
+      }).catch(function(err) {
+        console.log('Service Worker registration failed: ', err);
+      });
+    }
+  </script>
+<script type="text/javascript" src="inline.eb12f8e1e071134404f7.bundle.js"></script><script type="text/javascript" src="polyfills.4664a3fb90f86e6210e2.bundle.js"></script><script type="text/javascript" src="vendor.de014016ee5194525b99.bundle.js"></script><script type="text/javascript" src="main.7a90318f8273570778e3.bundle.js"></script></body>
+</html>
