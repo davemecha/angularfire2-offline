@@ -268,7 +268,7 @@ export class AngularFireOfflineDatabase {
     this.listCache[key] = {
       loaded: false,
       offlineInit: false,
-      sub: new AfoListObservable(ref, this.localUpdateService)
+      sub: new AfoListObservable(ref, this.localUpdateService, options)
     };
     // Firebase
     ref.subscribe(value => {
